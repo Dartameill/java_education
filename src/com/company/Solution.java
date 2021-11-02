@@ -17,7 +17,7 @@ public class Solution {
             break;
         } else if (name != "exit") {
             System.out.println("you write " + name);
-
+            System.out.println("hi git");
         }
             }
 
