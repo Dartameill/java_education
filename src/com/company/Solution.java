@@ -20,6 +20,7 @@ public class Solution {
             System.out.println("hi git");
             System.out.println("commit");
             System.out.println("sss");
+            System.out.println("sss");
         }
             }
 
