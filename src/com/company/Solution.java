@@ -18,6 +18,7 @@ public class Solution {
         } else if (name != "exit") {
             System.out.println("you write " + name);
             System.out.println("hi git");
+            System.out.println("commit");
         }
             }
 
