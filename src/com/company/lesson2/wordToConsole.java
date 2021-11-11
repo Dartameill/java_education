@@ -1,7 +1,7 @@
 package com.company.lesson2;
 import java.util.Scanner;
 
-public class Solution {
+public class wordToConsole {
     public static void main(String[] args) {
 
         while(true) {
