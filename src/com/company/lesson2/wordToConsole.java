@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
-
 
         while(true) {
 
@@ -19,7 +16,6 @@ public class Solution {
             System.out.println("you write " + name);
         }
             }
-
         System.out.println("exit from system is complete");
 
 
