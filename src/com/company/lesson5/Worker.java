@@ -5,7 +5,6 @@ public class Worker {
     public String name;
     public String surname;
     public int salary;
-    public int count;
 
     public Worker(String name, String surname, int salary) {
         this.name = name;

@@ -16,7 +16,7 @@ public class Director extends Worker {
 
     public Director addWorker(Worker worker) {
         worker.typeOfEmployee();
-        count++;
+        this.count = count++;
         System.out.println("Quantity of employees: " + count);
         return this;
     }
@@ -31,7 +31,8 @@ public class Director extends Worker {
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", salary=" + salary +
-                ", count=" + count +
+                ", position=" + typeOfEmployee() +
+                ", employees=" + count +
                 '}';
     }
 }
