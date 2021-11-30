@@ -18,6 +18,7 @@ public class DirectorAndEmployees {
         System.out.println(boss.typeOfEmployee());
 
         boss.addWorker(boss2);
+        System.out.println(boss.toString());
 
     }
 }

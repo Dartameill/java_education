@@ -16,7 +16,7 @@ public class Director extends Worker {
 
     public Director addWorker(Worker worker) {
         worker.typeOfEmployee();
-        this.count = count++;
+        count++;
         System.out.println("Quantity of employees: " + count);
         return this;
     }
