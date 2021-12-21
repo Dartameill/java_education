@@ -13,10 +13,9 @@ public class WorkerFinderImpl implements WorkerFinder {
                 .filter(employee -> employee.name.equals(name))
                 .findFirst();
         if (result.isPresent()) {
-            System.out.println("Worker has been found, his info is :");
+            System.out.print("Worker has been found, his info is : ");
             System.out.println(result.get());
         }
-
     }
 }
 
