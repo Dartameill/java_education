@@ -4,13 +4,10 @@ public enum Position {
 
     WORKER(2),
     DIRECTOR(5);
-
     int rate;
-
 
     Position() {
     }
-
     Position(int rate) {
         this.rate = rate;
     }

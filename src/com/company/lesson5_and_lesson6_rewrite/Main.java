@@ -17,7 +17,7 @@ public class Main {
         director2.addWorker(worker3);
         director1.addDirector(director2);
 
-        iml.findWorker(director1, "Stev");
+        iml.findWorker(director1, "Deiv");
 
         director1.getAllInfo();
         director2.getInfo();

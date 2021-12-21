@@ -2,10 +2,6 @@ package com.company.lesson5_and_lesson6_rewrite;
 
 public class Worker extends Employee {
 
-    String name;
-    String surname;
-    int salary;
-
     public Worker(String name, String surname, int salary) {
         super(Position.WORKER);
         this.name = name;

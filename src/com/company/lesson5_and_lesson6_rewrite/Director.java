@@ -5,9 +5,6 @@ import java.util.List;
 
 public class Director extends Employee {
 
-    String name;
-    String surname;
-    int salary;
     int rateDirector = Position.DIRECTOR.rate;
     List<Director> directors = new ArrayList<>();
     List<Worker> workers = new ArrayList<>();
