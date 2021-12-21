@@ -6,8 +6,10 @@ public abstract class Employee extends Person {
     String name;
     String surname;
     int salary;
+    int baseRate;
+    int expEmployee;
 
-    public int salarySum(int baseRate, int expEmployee) {
+    public int salarySum() {
         return baseRate * position.rate * expEmployee;
     }
 

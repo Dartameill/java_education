@@ -16,6 +16,11 @@ public class Director extends Employee {
         this.salary = salary;
     }
 
+    @Override
+    public int salarySum() {
+        return super.salarySum();
+    }
+
     public void addWorker(Employee employee) {
         employees.add(employee);
     }

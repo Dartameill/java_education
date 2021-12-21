@@ -15,6 +15,11 @@ public class Worker extends Employee {
     }
 
     @Override
+    public int salarySum() {
+        return super.salarySum();
+    }
+
+    @Override
     public String toString() {
         return "Worker{" +
                 "position=" + position +
