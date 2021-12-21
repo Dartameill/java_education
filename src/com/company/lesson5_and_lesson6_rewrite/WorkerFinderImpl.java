@@ -8,7 +8,7 @@ public class WorkerFinderImpl implements WorkerFinder {
     }
 
     @Override
-    public void findWorker(Director director, String name) {
+    public Director findWorker(Director director, String name) {
         Optional<Employee> result = director.employees.stream()
                 .filter(employee -> employee.name.equals(name))
                 .findFirst();
@@ -16,6 +16,7 @@ public class WorkerFinderImpl implements WorkerFinder {
             System.out.print("Worker has been found, his info is : ");
             System.out.println(result.get());
         }
+        return director;
     }
 }
 

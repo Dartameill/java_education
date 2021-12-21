@@ -19,7 +19,7 @@ public class Director extends Employee {
     @Override
     public int salarySum() {
         for(int i = 0; i < employees.size(); i++) {
-            rateDirector = rateDirector * 2;
+            rateDirector = rateDirector + 2;
         }
         return super.salarySum();
     }
