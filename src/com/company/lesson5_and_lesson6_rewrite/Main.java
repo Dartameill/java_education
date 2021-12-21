@@ -17,6 +17,7 @@ public class Main {
         director1.addWorker(director2);
 
         iml.findWorker(director1, "Stev");
+        director1.salarySum();
 
         System.out.println(director1);
     }

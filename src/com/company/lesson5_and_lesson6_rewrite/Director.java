@@ -18,6 +18,9 @@ public class Director extends Employee {
 
     @Override
     public int salarySum() {
+        for(int i = 0; i < employees.size(); i++) {
+            rateDirector = rateDirector * 2;
+        }
         return super.salarySum();
     }
 
@@ -34,11 +37,11 @@ public class Director extends Employee {
     public String toString() {
         return "Director{" +
                 "rateDirector=" + rateDirector +
-                ", employees=" + employees +
-                ", position=" + position +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", salary=" + salary +
+                ", employees=" + employees +
+                ", position=" + position +
                 '}';
     }
 }
