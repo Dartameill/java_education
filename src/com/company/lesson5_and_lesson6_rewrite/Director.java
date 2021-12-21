@@ -9,7 +9,6 @@ public class Director extends Employee {
     int rateDirector = Position.DIRECTOR.rate;
     List<Employee> employees = new ArrayList<>();
 
-
     public Director(String name, String surname, int salary) {
         super(Position.DIRECTOR);
         this.name = name;

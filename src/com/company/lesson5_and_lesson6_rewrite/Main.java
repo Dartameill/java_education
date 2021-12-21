@@ -10,7 +10,6 @@ public class Main {
         Director director1 = new Director("Boss", "Bossovich", 4000);
         Director director2 = new Director("Boss2", "Bossovich2", 5000);
 
-
         director1.addWorker(worker1);
         director1.addWorker(worker2);
 

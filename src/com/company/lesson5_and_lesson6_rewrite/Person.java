@@ -8,5 +8,4 @@ public class Person {
     public String returnNameAndSurname(String name, String surname) {
         return name + " " + surname;
     }
-
 }
