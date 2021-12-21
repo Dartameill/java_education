@@ -9,12 +9,12 @@ public class WorkerFinderImpl implements WorkerFinder {
 
     @Override
     public void findWorker(Director director, String name) {
-        Optional<Worker> result = director.workers.stream()
-                .filter(worker -> worker.name.equals(name))
+        Optional<Employee> result = director.employees.stream()
+                .filter(employee -> employee.name.equals(name))
                 .findFirst();
         if (result.isPresent()) {
             System.out.println("Worker has been found, his info is :");
-            result.get().getInfo();
+            System.out.println(result.get());
         }
 
     }

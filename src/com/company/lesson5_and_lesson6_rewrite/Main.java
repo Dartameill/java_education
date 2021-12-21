@@ -15,11 +15,10 @@ public class Main {
         director1.addWorker(worker2);
 
         director2.addWorker(worker3);
-        director1.addDirector(director2);
+        director1.addWorker(director2);
 
         iml.findWorker(director1, "Stev");
 
-        director1.getAllInfo();
-        director2.getInfo();
+        System.out.println(director1);
     }
 }

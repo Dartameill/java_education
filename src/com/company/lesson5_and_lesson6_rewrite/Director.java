@@ -5,12 +5,10 @@ import java.util.List;
 
 public class Director extends Employee {
 
-    String name;
-    String surname;
-    int salary;
+
     int rateDirector = Position.DIRECTOR.rate;
-    List<Director> directors = new ArrayList<>();
-    List<Worker> workers = new ArrayList<>();
+    List<Employee> employees = new ArrayList<>();
+
 
     public Director(String name, String surname, int salary) {
         super(Position.DIRECTOR);
@@ -19,12 +17,8 @@ public class Director extends Employee {
         this.salary = salary;
     }
 
-    public void addDirector(Director director) {
-        directors.add(director);
-    }
-
-    public void addWorker(Worker worker) {
-        workers.add(worker);
+    public void addWorker(Employee employee) {
+        employees.add(employee);
     }
 
     @Override
@@ -32,26 +26,15 @@ public class Director extends Employee {
         return this.position;
     }
 
-    public void getAllInfo() {
-        this.getInfo();
-        System.out.println("Workers:");
-        for (Worker worker : workers) {
-            worker.getInfo();
-        }
-        System.out.println("Directors:");
-        for (Director director : directors) {
-            director.getInfo();
-        }
-    }
-
-    public void getInfo() {
-        System.out.println("Director{" +
-                "name='" + name + '\'' +
+    @Override
+    public String toString() {
+        return "Director{" +
+                "rateDirector=" + rateDirector +
+                ", employees=" + employees +
+                ", position=" + position +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", salary=" + salary +
-                ", position=" + getPositionEmployee() +
-                ", rate=" + Position.DIRECTOR.rate +
-                ", QuantityOfEmployees=" + workers.size() +
-                "}");
+                '}';
     }
 }
