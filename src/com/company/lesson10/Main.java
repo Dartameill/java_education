@@ -10,6 +10,7 @@ public class Main {
         System.out.println(Arrays.stream(number).skip(4));
         System.out.println(Arrays.stream(number));
 
+
     }
 
 }
