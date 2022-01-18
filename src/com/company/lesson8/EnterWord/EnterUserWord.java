@@ -5,4 +5,5 @@ import java.util.ArrayList;
 
 public interface EnterUserWord {
     ArrayList<String> EnterWordTo(ArrayList<String> arrayList) throws IOException;
+
 }

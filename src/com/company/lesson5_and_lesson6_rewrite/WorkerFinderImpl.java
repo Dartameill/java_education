@@ -4,10 +4,6 @@ import java.util.Optional;
 
 public class WorkerFinderImpl implements WorkerFinder {
 
-    WorkerFinderImpl() {
-    }
-
-    @Override
     public Director findWorker(Director director, String name) {
         Optional<Employee> result = director.employees.stream()
                 .filter(employee -> employee.name.equals(name))

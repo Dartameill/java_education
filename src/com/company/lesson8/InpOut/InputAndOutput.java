@@ -6,4 +6,5 @@ import java.util.List;
 public interface InputAndOutput {
      ArrayList<String> OutAndInt(ArrayList<String> arrayList);
      ArrayList<String> isEmptyArray(ArrayList<String> list);
+
 }

@@ -1,11 +1,8 @@
 package com.company.lesson5_and_lesson6_rewrite;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Director extends Employee {
-
-
     int rateDirector = Position.DIRECTOR.rate;
     List<Employee> employees = new ArrayList<>();
 
@@ -15,7 +12,6 @@ public class Director extends Employee {
         this.surname = surname;
         this.salary = salary;
     }
-
     @Override
     public int salarySum() {
         for(int i = 0; i < employees.size(); i++) {
@@ -23,11 +19,9 @@ public class Director extends Employee {
         }
         return super.salarySum();
     }
-
     public void addWorker(Employee employee) {
         employees.add(employee);
     }
-
     @Override
     Position getPositionEmployee() {
         return this.position;

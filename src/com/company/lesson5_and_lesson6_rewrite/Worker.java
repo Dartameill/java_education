@@ -14,7 +14,7 @@ public class Worker extends Employee {
         return this.position;
     }
 
-    @Override
+
     public int salarySum() {
         return super.salarySum();
     }

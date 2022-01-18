@@ -25,7 +25,8 @@ public class EnterWord implements EnterUserWord {
                     System.out.println(arrayList.get(0));
                 }
             } catch (Exception e) {
-                e.printStackTrace();
+                System.out.println("Exception has been caught");
+
             }
         }
         return arrayList;
